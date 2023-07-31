@@ -97,6 +97,7 @@ jobs:
                        model=${{ matrix.model }} \
                        name="Cruel-v5.2-HVE5-KernelSU"        \
                        toolchain=$TOOLCHAIN      \
+                       os_patch_level=2023-05    \
                        -magisk                   \
                        +nohardening              \
                        +ttl                      \
