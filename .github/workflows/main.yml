@@ -58,7 +58,7 @@ jobs:
                        name="Cruel-v5.2-HVE5"    \
                        toolchain=$TOOLCHAIN      \
                        os_patch_level=2023-05    \
-                       +magisk                   \
+                       +magisk=delta             \
                        +nohardening              \
                        +ttl                      \
                        +wireguard                \
