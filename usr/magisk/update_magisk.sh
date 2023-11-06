@@ -17,7 +17,7 @@ then
 elif [ "x$1" = "x" ]; 
 then
 	nver="$1"
-	magisk_link="https://github.com/kevzoj/samsung-exynos9820/raw/kevzoj_Cruel-v5.2-HVE5-Magisk/Magisk-v26.4.apk"
+	magisk_link="https://github.com/kevzoj/samsung-exynos9820/raw/${nver}/kevzoj_Cruel-v5.2-HVE5-Magisk/Magisk-v26.4.apk"
 fi
 
 if [ \( -n "$nver" \) -a \( "$nver" != "$ver" \) -o ! \( -f "$DIR/magiskinit" \) -o \( "$nver" = "canary" \) -o \( "$nver" = "alpha" \) ]
