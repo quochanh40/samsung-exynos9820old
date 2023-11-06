@@ -13,7 +13,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        model: [ "G973F","N975F" ]
+        model: [ "N975F" ]
 
     steps:
       - uses: actions/checkout@v2
@@ -55,9 +55,9 @@ jobs:
           set -e -o pipefail
           ./cruelbuild config                    \
                        model=${{ matrix.model }} \
-                       name="Cruel-v5.2-HVE5"    \
+                       name="kevzoj|Cruel-v5.2-HVE5"    \
                        toolchain=$TOOLCHAIN      \
-                       os_patch_level=2023-05    \
+                       os_patch_level=2023-08    \
                        +magisk                   \
                        +nohardening              \
                        +ttl                      \
