@@ -55,10 +55,10 @@ jobs:
           set -e -o pipefail
           ./cruelbuild config                    \
                        model=${{ matrix.model }} \
-                       name="kevzoj|Cruel-v5.2-HVE5"    \
+                       name="kevzoj_Cruel-v5.2-HVE5"    \
                        toolchain=$TOOLCHAIN      \
                        os_patch_level=2023-08    \
-                       +magisk=alpha             \
+                       +magisk                   \
                        +nohardening              \
                        +ttl                      \
                        +wireguard                \
