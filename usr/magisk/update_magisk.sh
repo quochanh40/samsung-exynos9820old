@@ -10,16 +10,17 @@ if [ "x$1" = "xcanary" ]
 then
 	nver="canary"
 	magisk_link="https://github.com/topjohnwu/magisk-files/raw/${nver}/app-debug.apk"
-eif [ "x$1" = "xalpha" ]
+elif [ "x$1" = "xalpha" ]
 then
 	nver="alpha"
 	magisk_link="https://github.com/vvb2060/magisk_files/raw/${nver}/app-release.apk"
-if [ "x$1" = "x" ]; then
+else
+	if [ "x$1" = "x" ]; then
 		nver="$(curl -s https://github.com/topjohnwu/Magisk/releases | grep -m 1 -Poe 'Magisk v[\d\.]+' | cut -d ' ' -f 2)"
 	else
 		nver="$1"
 	fi
-	magisk_link="https://github.com/kevzoj/samsung-exynos9820/raw/kevzoj_Cruel-v5.2-HVE5-Magisk/Magisk-v26.4.apk"
+	magisk_link="https://github.com/topjohnwu/Magisk/releases/download/${nver}/Magisk-${nver}.apk"
 fi
 
 if [ \( -n "$nver" \) -a \( "$nver" != "$ver" \) -o ! \( -f "$DIR/magiskinit" \) -o \( "$nver" = "canary" \) -o \( "$nver" = "alpha" \) ]
