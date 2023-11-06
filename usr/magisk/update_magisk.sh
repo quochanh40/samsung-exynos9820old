@@ -10,11 +10,11 @@ if [ "x$1" = "xcanary" ]
 then
 	nver="canary"
 	magisk_link="https://github.com/topjohnwu/magisk-files/raw/${nver}/app-debug.apk"
-elif [ "x$1" = "xalpha" ]
+eif [ "x$1" = "xalpha" ]
 then
 	nver="alpha"
 	magisk_link="https://github.com/vvb2060/magisk_files/raw/${nver}/app-release.apk"
-elif [ "x$1" = "x" ]; 
+if [ "x$1" = "x" ]; 
 then
 	nver="$1"
 	magisk_link="https://github.com/kevzoj/samsung-exynos9820/raw/${nver}/kevzoj_Cruel-v5.2-HVE5-Magisk/Magisk-v26.4.apk"
