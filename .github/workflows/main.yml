@@ -13,7 +13,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        model: [ "N970F,N975F" ]
+        model: [ "N970F", "N975F" ]
 
     steps:
       - uses: actions/checkout@v2
