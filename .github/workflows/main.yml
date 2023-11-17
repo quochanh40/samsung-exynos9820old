@@ -13,7 +13,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        model: [ "N970F", "N975F" ]
+        model: [ "N975F" ]
 
     steps:
       - uses: actions/checkout@v2
@@ -71,6 +71,10 @@ jobs:
                        +mass_storage             \
                        +usb_serial               \
                        +fp_boost                 \
+                       +nohardening2              \
+                       +noatime              \
+                       +nodebug            \
+                       +noaudit            \
           2>&1 | tee config.info
 
       - name: Install gcc-aarch64-linux-gnu
