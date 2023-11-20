@@ -58,7 +58,7 @@ jobs:
                        name="Beesi_kevzoj_Cruel-v5.2-HVE5"   \
                        toolchain=$TOOLCHAIN      \
                        os_patch_level=2023-08    \
-                       +magisk                   \
+                       +magisk=canary                   \
                        +nohardening              \
                        +ttl                      \
                        +wireguard                \
