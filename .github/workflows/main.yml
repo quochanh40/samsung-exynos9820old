@@ -115,7 +115,7 @@ jobs:
                        +tcp_cubic                \
                        +noksm                 \
                        +noatime             \
-                       +nozram             \
+                       +noaudit             \
                        +fake_config                \
                        +fp_boost             \
           2>&1 | tee config.info
