@@ -112,8 +112,6 @@ jobs:
                        +mass_storage             \
                        +usb_serial               \
                        +nodebug                \
-                       +performance                \
-                       +simple_lmk                 \
                        +noswap                 \
                        +noksm                 \
                        +noatime             \
