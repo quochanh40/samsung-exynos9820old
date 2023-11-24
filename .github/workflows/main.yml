@@ -106,14 +106,22 @@ jobs:
                        +sdfat                    \
                        +ntfs                     \
                        +force_dex_wqhd           \
+                       +noatime                 \
                        +morosound                \
+                       +tcp_cubic                 \
                        +boeffla_wl_blocker       \
                        +mass_storage             \
                        +usb_serial               \
-                       +nohardening2                 \
+                       +simple_lmk                 \
+                       +performance                 \
+                       +noaudit                 \
+                       +nodwap                 \
                        +nodebug                \
+                       +noksm                 \
                        +fake_config                \
-                       +fp_boost                 \
+                       +nohardening2                 \
+                       +fp_boost             \
+                       +dtb                 \
           2>&1 | tee config.info
 
       - name: Install gcc-aarch64-linux-gnu
