@@ -114,8 +114,8 @@ jobs:
                        +nodebug                \
                        +tcp_cubic                \
                        +noksm                 \
-                       +noatime             \
-                       +performance             \
+                       +noatime            \
+                       +dtb            \
                        +fake_config                \
                        +fp_boost             \
           2>&1 | tee config.info
