@@ -113,15 +113,15 @@ jobs:
                        +mass_storage             \
                        +usb_serial               \
                        +simple_lmk                 \
-                       +performance                 \
+                       +empty_vbmeta                 \
                        +noaudit                 \
-                       +noswap                 \
+                       +empty_vbmeta                 \
                        +nodebug                \
                        +noksm                 \
                        +fake_config                \
                        +nohardening2                 \
                        +fp_boost             \
-                       +empty_vbmeta                 \
+                       +dtb                 \
           2>&1 | tee config.info
 
       - name: Install gcc-aarch64-linux-gnu
