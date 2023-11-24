@@ -105,10 +105,8 @@ jobs:
                        +cifs                     \
                        +sdfat                    \
                        +ntfs                     \
-                       +force_dex_wqhd           \
-                       +noatime                 \
+                       +force_dex_wqhd          \
                        +morosound                \
-                       +tcp_cubic                 \
                        +boeffla_wl_blocker       \
                        +mass_storage             \
                        +usb_serial               \
