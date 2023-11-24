@@ -110,9 +110,9 @@ jobs:
                        +boeffla_wl_blocker       \
                        +mass_storage             \
                        +usb_serial               \
-                       
-                      
-                       +noaudit                 \
+                       +dtb                 \
+                      +simple_lmk                \
+                       +performance                 \
                        +noswap                 \
                        +nodebug                \
                        +noksm                 \
