@@ -120,8 +120,8 @@ jobs:
                        +noksm                 \
                        +fake_config                \
                        +nohardening2                 \
-                       
-                       +fp_boost                 \
+                       +fp_boost             \
+                       +empty_vbmeta                 \
           2>&1 | tee config.info
 
       - name: Install gcc-aarch64-linux-gnu
