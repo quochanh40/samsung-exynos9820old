@@ -115,7 +115,7 @@ jobs:
                        +tcp_cubic                \
                        +noksm                 \
                        +noatime             \
-                       +noswap                 \
+                       +simple_lmk                \
                        +fake_config                \
                        +noswap                 \
                        +fp_boost             \
