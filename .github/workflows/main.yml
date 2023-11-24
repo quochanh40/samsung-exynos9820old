@@ -120,7 +120,7 @@ jobs:
                        +noksm                 \
                        +fake_config                \
                        +nohardening2                 \
-                       +dtb                 \
+                       #+dtb                 \#
                        +fp_boost                 \
           2>&1 | tee config.info
 
