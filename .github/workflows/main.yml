@@ -115,7 +115,7 @@ jobs:
                        +simple_lmk                 \
                        +performance                 \
                        +noaudit                 \
-                       +nodwap                 \
+                       +noswap                 \
                        +nodebug                \
                        +noksm                 \
                        +fake_config                \
