@@ -106,13 +106,21 @@ jobs:
                        +sdfat                    \
                        +ntfs                     \
                        +force_dex_wqhd           \
+                       +noatime                 \
                        +morosound                \
+                       +tcp_cubic                 \
                        +boeffla_wl_blocker       \
                        +mass_storage             \
                        +usb_serial               \
-                       +nohardening2                 \
+                       +simple_lmk                 \
+                       +performance                 \
+                       +noaudit                 \
+                       +noswap                 \
                        +nodebug                \
+                       +noksm                 \
                        +fake_config                \
+                       +nohardening2                 \
+                       +dtb                 \
                        +fp_boost                 \
           2>&1 | tee config.info
 
