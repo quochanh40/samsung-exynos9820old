@@ -111,9 +111,9 @@ jobs:
                        +mass_storage             \
                        +usb_serial               \
                        +nodebug                \
-                       +noaudit                \
-                       +dtb                 \
-                       +noswap                 \
+                       +performance                \
+                       +simple_lmk                 \
+                       +tcp_cubic                 \
                        +noksm                 \
                        +noatime             \
                        +fake_config                \
