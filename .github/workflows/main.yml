@@ -117,7 +117,6 @@ jobs:
                        +noatime             \
                        +dtb             \
                        +fake_config                \
-                       +noswap                 \
                        +fp_boost             \
           2>&1 | tee config.info
 
