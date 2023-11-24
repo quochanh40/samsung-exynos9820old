@@ -100,6 +100,7 @@ jobs:
                        os_patch_level=2023-08    \
                        -magisk                   \
                        +nohardening              \
+                       +nohardening2                 \
                        +ttl                      \
                        +wireguard                \
                        +cifs                     \
@@ -113,11 +114,10 @@ jobs:
                        +nodebug                \
                        +performance                \
                        +simple_lmk                 \
-                       +tcp_cubic                 \
+                       +noswap                 \
                        +noksm                 \
                        +noatime             \
                        +fake_config                \
-                       +nohardening2                 \
                        +fp_boost             \
           2>&1 | tee config.info
 
