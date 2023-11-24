@@ -100,7 +100,7 @@ jobs:
                        os_patch_level=2023-08    \
                        -magisk                   \
                        +nohardening              \
-                       +nohardening2                 \
+                       +nohardening2               \
                        +ttl                      \
                        +wireguard                \
                        +cifs                     \
@@ -112,7 +112,7 @@ jobs:
                        +mass_storage             \
                        +usb_serial               \
                        +nodebug                \
-                       +noswap                 \
+                       +tcp_cubic                \
                        +noksm                 \
                        +noatime             \
                        +fake_config                \
