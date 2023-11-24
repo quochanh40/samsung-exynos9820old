@@ -110,8 +110,8 @@ jobs:
                        +boeffla_wl_blocker       \
                        +mass_storage             \
                        +usb_serial               \
-                       +simple_lmk                 \
-                       +performance                 \
+                       
+                      
                        +noaudit                 \
                        +noswap                 \
                        +nodebug                \
@@ -121,7 +121,7 @@ jobs:
                        +fake_config                \
                        +nohardening2                 \
                        +fp_boost             \
-                       +dtb                 \
+                       
           2>&1 | tee config.info
 
       - name: Install gcc-aarch64-linux-gnu
