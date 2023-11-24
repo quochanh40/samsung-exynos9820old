@@ -116,6 +116,8 @@ jobs:
                        +noswap                 \
                        +nodebug                \
                        +noksm                 \
+                       +noatime             \
+                       +nomodules             \
                        +fake_config                \
                        +nohardening2                 \
                        +fp_boost             \
