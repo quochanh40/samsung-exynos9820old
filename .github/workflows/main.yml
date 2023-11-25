@@ -114,7 +114,6 @@ jobs:
                        +nodebug                \
                        +tcp_cubic                \
                        +noaudit            \
-                       +simple_lmk          \
                        +noksm                 \
                        +noatime            \
                        +performance            \
