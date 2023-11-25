@@ -113,9 +113,11 @@ jobs:
                        +usb_serial               \
                        +nodebug                \
                        +tcp_cubic                \
+                       +noaudit            \
+                       +simple_lmk          \
                        +noksm                 \
                        +noatime            \
-                       +dtb            \
+                       +performance            \
                        +fake_config                \
                        +fp_boost             \
           2>&1 | tee config.info
