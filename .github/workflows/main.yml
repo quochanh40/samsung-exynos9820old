@@ -13,7 +13,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        model: [ "G970F,G973F,G975F", "N975F" ]
+        model: [ "N975F" ]
 
     steps:
       - uses: actions/checkout@v3
@@ -57,15 +57,16 @@ jobs:
                        model=${{ matrix.model }} \
                        name="Cruel-devel"        \
                        toolchain=$TOOLCHAIN      \
-                       +magisk                   \
+                       +magisk=delta                  \
                        +nohardening              \
-                       +ttl                      \
+                       +always_permit                      \
                        +wireguard                \
                        +cifs                     \
                        +sdfat                    \
                        +ntfs                     \
                        +force_dex_wqhd           \
-                       +morosound                \
+                       +fp_boost           \
+                       +overlayfs                \
                        +boeffla_wl_blocker       \
           2>&1 | tee config.info
 
