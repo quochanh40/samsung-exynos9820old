@@ -57,15 +57,22 @@ jobs:
                        model=${{ matrix.model }} \
                        name="Cruel-devel"        \
                        toolchain=$TOOLCHAIN      \
-                       +magisk                   \
+                       -magisk                   \
+                        -kernelsu                   \
+                         +nohardening2                   \
                        +nohardening              \
                        +overlayfs                      \
+                       +nodebug             \
+                       +always_permit              \
                        +wireguard                \
                        +cifs                     \
                        +sdfat                    \
                        +ntfs                     \
-                       +always_permit           \
+                       +fake_config           \
+                       +fp_boost                \
+                       +noaudit               \
                        +morosound                \
+                       +sched_conservative        \
                        +boeffla_wl_blocker       \
           2>&1 | tee config.info
 
