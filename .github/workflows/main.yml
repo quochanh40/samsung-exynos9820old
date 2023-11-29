@@ -107,8 +107,8 @@ jobs:
                        +sdfat                    \
                        +ntfs                     \
                        +force_dex_wqhd          \
-                       +morosound                \
-                       +boeffla_wl_blocker       \
+                       +always_permit                \
+                       +overlayfs       \
                        +mass_storage             \
                        +usb_serial               \
                        +nodebug                \
