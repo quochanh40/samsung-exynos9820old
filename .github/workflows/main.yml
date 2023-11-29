@@ -58,7 +58,6 @@ jobs:
                        name="Cruel-devel"        \
                        toolchain=$TOOLCHAIN      \
                        -magisk                   \
-                        -kernelsu                   \
                          +nohardening2                   \
                        +nohardening              \
                        +overlayfs                      \
