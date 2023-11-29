@@ -98,7 +98,7 @@ jobs:
                        name="Beesi_kevzoj_Cruel-v5.2-HVE5-KSU"        \
                        toolchain=$TOOLCHAIN      \
                        os_patch_level=2023-08    \
-                       -magisk                   \
+                       +magisk                   \
                        +nohardening              \
                        +nohardening2               \
                        +ttl                      \
