@@ -13,7 +13,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        model: [ "N970F", "N975F" ]
+        model: [ "N975F" ]
 
     steps:
       - uses: actions/checkout@v2
@@ -60,7 +60,7 @@ jobs:
                        os_patch_level=2023-08    \
                        +magisk=delta             \
                        +nohardening              \
-                       +ttl                      \
+                       +always_permit                      \
                        +wireguard                \
                        +cifs                     \
                        +sdfat                    \
