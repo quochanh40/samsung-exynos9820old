@@ -13,7 +13,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        model: [ "G970F,G973F,G975F", "N970F,N975F" ]
+        model: [ "N975F" ]
 
     steps:
       - uses: actions/checkout@v2
@@ -59,12 +59,12 @@ jobs:
                        toolchain=$TOOLCHAIN      \
                        +magisk                   \
                        +nohardening              \
-                       +ttl                      \
+                       +overlayfs                      \
                        +wireguard                \
                        +cifs                     \
                        +sdfat                    \
                        +ntfs                     \
-                       +force_dex_wqhd           \
+                       +always_permit           \
                        +morosound                \
                        +boeffla_wl_blocker       \
           2>&1 | tee config.info
