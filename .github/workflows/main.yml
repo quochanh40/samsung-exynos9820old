@@ -62,7 +62,7 @@ jobs:
                        +nohardening              \
                        +nodebug             \
                        +always_permit              \
-                       +wireguard                \
+                       +overlayfs               \
                        +cifs                     \
                        +sdfat                    \
                        +ntfs                     \
