@@ -58,9 +58,11 @@ jobs:
                        name="kevzoj_Cruel-v5.2-HVE5-Delta"    \
                        toolchain=$TOOLCHAIN      \
                        os_patch_level=2023-08    \
-                       +magisk=delta             \
+                       +magisk-delta             \
+                       -kernelsu            \
+                       +overlayfs             \
                        +nohardening              \
-                       +ttl                      \
+                       +always_permit                   \
                        +wireguard                \
                        +cifs                     \
                        +sdfat                    \
