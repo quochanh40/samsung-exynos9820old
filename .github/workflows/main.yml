@@ -60,7 +60,6 @@ jobs:
                        -magisk                   \
                          +nohardening2                   \
                        +nohardening              \
-                       +overlayfs                      \
                        +nodebug             \
                        +always_permit              \
                        +wireguard                \
