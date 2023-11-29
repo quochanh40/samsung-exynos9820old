@@ -64,9 +64,9 @@ jobs:
                        +cifs                     \
                        +sdfat                    \
                        +ntfs                     \
-                       +force_dex_wqhd           \
-                       +always_permit                \
-                       +boeffla_wl_blocker       \
+                       +nohardening2           \
+                       +fake_config                \
+                       +fp_boost       \
           2>&1 | tee config.info
 
       - name: Install gcc-aarch64-linux-gnu
