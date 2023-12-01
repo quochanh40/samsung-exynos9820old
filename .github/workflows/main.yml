@@ -60,7 +60,7 @@ jobs:
                        os_patch_level=2023-08    \
                        +magisk=canary                 \
                        +nohardening              \
-                       +overlayfs                      \
+                       +overlayfs                     \
                        +wireguard                \
                        +cifs                     \
                        +sdfat                    \
