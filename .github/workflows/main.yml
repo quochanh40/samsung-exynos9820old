@@ -73,7 +73,6 @@ jobs:
                        +fp_boost                 \
                        +nohardening2              \
                        +fake_config              \
-                        +empty_vbmeta              \
                        +noatime              \
                        +nodebug            \
                        +noaudit            \
