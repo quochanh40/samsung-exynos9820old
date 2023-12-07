@@ -73,7 +73,7 @@ jobs:
                        +fp_boost                 \
                        +nohardening2              \
                        +fake_config              \
-                        +noksm              \
+                        -kernelsu              \
                        +noatime              \
                        +nodebug            \
                        +noaudit            \
