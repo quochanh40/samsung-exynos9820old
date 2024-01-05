@@ -93,14 +93,13 @@ jobs:
       - name: Kernel Configure
         run: |
           set -e -o pipefail
-          ./cruelbuild config                    \
+          ./cruelbuild config                 \
                        model=${{ matrix.model }} \
                        name="Beesi_kevzoj_Cruel-v5.2-HVE5-KSU"        \
                        toolchain=$TOOLCHAIN      \
                        os_patch_level=2023-08    \
-                       -magisk                   \
-                       +nohardening              \
-                       +nohardening2               \
+                       +nohardening           \
+                       +nohardening2            \
                        +ttl                      \
                        +wireguard                \
                        +cifs                     \
@@ -108,17 +107,16 @@ jobs:
                        +ntfs                     \
                        +force_dex_wqhd      \   
                        +overlayfs       \
-                       +mass_storage             \
-                       +usb_serial               \
+                       +mass_storage          \
+                       +usb_serial             \
                        +nodebug                \
-                       +tcp_cubic                \
+                       +tcp_cubic               \
                        +noaudit            \
-                       +noksm                 \
+                       +noksm               \
                        +noatime            \
                        +performance            \
                        +fake_config                \
                        +fp_boost             \
-                       
           2>&1 | tee config.info
       - name: Install gcc-aarch64-linux-gnu
         if: env.TOOLCHAIN == 'system-gcc' || env.TOOLCHAIN == 'system-clang'
