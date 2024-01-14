@@ -3,7 +3,7 @@ name: Build
 on: [push, workflow_dispatch]
 
 env:
-  TOOLCHAIN: arm
+  TOOLCHAIN: arm64
   INSTALLER: yes
 
 jobs:
