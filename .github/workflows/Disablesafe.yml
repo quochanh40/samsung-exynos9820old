@@ -104,7 +104,6 @@ jobs:
                        +ntfs                     \
                        +fake_config     \
                        +fp_boost   \
-                       +GCC_GRAPHITE \
                        +mass_storage  \
                        +noatime  \
                        +noaudit \
