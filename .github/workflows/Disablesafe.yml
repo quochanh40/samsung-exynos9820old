@@ -96,6 +96,7 @@ jobs:
                        toolchain=$TOOLCHAIN      \
                        os_patch_level=2022-04    \
                        -magisk                   \
+                       +kernelsu                  \
                        +nohardening              \
                        +ttl                      \
                        +nodebug                \
@@ -108,7 +109,6 @@ jobs:
                        +noatime  \
                        +noaudit \
                        +nohardening2 \
-                       +polly \
           2>&1 | tee config.info
 
       - name: Install gcc-aarch64-linux-gnu
